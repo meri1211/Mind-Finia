@@ -1,1 +1,16 @@
-// creating the header component
+// created the Header component that has a navbar, a logo and text and gave it props
+
+import Navbar from "./Navbar";
+
+function Header({ imageSrc, headerText, logoSrc }) {
+  return (
+    <header>
+      <img src={logoSrc} alt="Company Logo" className="logo" />
+      <Navbar />
+      <img src={imageSrc} alt="Header Image" />
+      <h2>{headerText}</h2>
+    </header>
+  );
+}
+
+export default Header;
